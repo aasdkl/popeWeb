@@ -1,0 +1,192 @@
+﻿<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>罗马教宗数字史学研究</title>
+		<link href="./css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="./css/bootstrap-table.css" rel="stylesheet" type="text/css">
+		<link href="./css/theme.css" rel="stylesheet" type="text/css">
+		<link href="./css/mine.css" rel="stylesheet" type="text/css">
+		<link href="./css/leaflet.css" rel="stylesheet" type="text/css">
+
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-fixed-top myStick">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+							<span class="sr-only">打开导览</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="./index.html"><span>教宗那些事儿</span></a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-ex-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<a href="./index.html">首页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					<h1 class="gray">教宗列表</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+					
+  <div class="panel">
+    <div class="panel-heading" role="tab">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          关于教皇的序数存在一些问题... [点击展开]
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+      					<ul>
+<li>斐理斯二世（356–357）、博义七世（974、984–985）、若望十六世（997–998）、本笃十世（1058–1059）及亚历山大五世（1409–1410）为对立教皇，由此未列于列表内。</li>
+<li>虽然计数未将对立教皇斐理斯二世计算在内，多数列表仍旧将此后的两名斐理斯称斐理斯三世和斐理斯四世。此外亦有一对立教皇称斐理斯五世。</li>
+<li>由于11世纪计数问题的混淆，史上并无称若望二十世的教皇。</li>
+<li>当选教皇斯德望在祝圣前过世。1960年前的梵蒂冈官方教皇列表将其包括在内，但1961年后他被排除在外。此后称斯德望的教皇由此名似斯德望二世（752–757）和斯德望九世（1057–1058），而非斯德望三世或斯德望十世。</li>
+<li>西蒙·德·布里翁于1281年当选教皇时定名马丁。此前的玛理诺一世和玛理诺二世被误计为马丁二世和马丁三世，由此德·布里翁即成为马丁四世。</li>
+<li>杜努二世据称在约974年在位，但事实上其并不存在。发生误解的原因是“领主”（Dominus）一头衔被误认为名字。</li>
+<li>女教皇琼安并不存在。其故事可能来源于教廷黑暗时代的传说。</li>
+<li>对立教皇若望二十三世的地位在数百年中并不明确，直至1958年安杰洛·吉塞佩·龙嘉利定名若望二十三世。对立教皇若望二十三世巴尔达萨雷·科萨原为一统教会的大主教，1419年过世，葬于佛罗伦萨洗礼堂。</li>
+<li>宗座缺出论者认为自第二次梵蒂冈大公会议以来的所有教皇均为异端，由此不承认自庇护十二世以来的所有教皇。</li>
+					</ul>
+      </div>
+    </div>
+  </div>
+				<div id="toolbar">
+					<div class="form-inline">
+						<div class="form-group" style="padding-right: 2em;">
+							<select class="form-control">
+							  <option>所有</option>
+							  <option>1</option>
+							  <option>2</option>
+							  <option>3</option>
+							  <option>4</option>
+							  <option>5</option>
+							  <option>6</option>
+							  <option>7</option>
+							  <option>8</option>
+							  <option>9</option>
+							  <option>10</option>
+							  <option>11</option>
+							  <option>12</option>
+							  <option>13</option>
+							  <option>14</option>
+							  <option>15</option>
+							  <option>16</option>
+							  <option>17</option>
+							  <option>18</option>
+							  <option>19</option>
+							  <option>20</option>
+							  <option>21</option>
+							</select>
+							<span> 世纪 </span>
+						</div>
+					</div>
+				</div>
+					
+						<table	data-toggle="table" 
+								data-classes="table table-condensed"
+								id="table"
+								data-toolbar="#toolbar"
+								data-search="true"
+								data-search-align="left"
+								>
+							<thead>
+								<tr>
+									<th data-field="num" data-valign="middle"  data-searchable="false">
+										任数
+									</th>
+									<th data-field="time" data-valign="middle" data-width="25%"  data-searchable="false">
+										任期
+									</th>
+									<th data-field="head" data-valign="middle" data-searchable="false">
+										肖像
+									</th>
+									<th data-field="name1" data-valign="middle">
+										称号：中文<br>拉丁语
+									</th>
+									<th data-field="name2" data-valign="middle" data-searchable="false">
+										本名
+									</th>
+									<th data-field="born" data-valign="middle">
+										出生地
+									</th>
+									<th data-field="age" data-valign="middle"  data-width="1%" data-searchable="false">
+										就任岁数/<br>离任岁数
+									</th>
+									<th data-field="tag" data-valign="middle" data-width="30%">
+										备注
+									</th>
+
+								</tr>
+							</thead>
+							<tbody>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					<h1 class="gray">出生分布</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div id="mapid" style="height:600px"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+					<h1 class="gray">数据统计</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div id="chart2" style="height:540px"></div>
+					</div>
+				</div>
+				<div style="margin: 4em;"></div>
+				<div class="row">
+					<div class="col-md-12">
+						<div id="chart3" style="height:650px"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap-table.js"></script>
+		<script src="./js/echarts.common.min.js"></script>
+		<script src="./js/leaflet-src.js"></script>
+		<script src="./js/data.js" async="async"></script>
+	</body>
+
+</html>
